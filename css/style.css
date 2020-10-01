@@ -3,15 +3,18 @@
 *font-family: 'Long Cang', cursive;
 */
 
-/*reset ou generique--------------------------------------------------*/
+/*reset generique--------------------------------------------------*/
 *{
      margin: 0;
      padding: 0;
      box-sizing: border-box;
+
 }
 
 body{
      font-family: 'Montserrat', sans-serif;
+     background: #eee;
+     color: #333;
 }
 
 p{
@@ -30,7 +33,29 @@ strong{
      color: #FD9330;
      font-weight: 400;
 }
+em{
+     color: #555;
+}
 
+/*les classes---------------------------------------------------*/
+.container{
+     
+     display: block;
+     max-width: 1200px;
+     margin: auto;
+}
+ul{
+     list-style: none;
+}
+.title{
+     font-weight: 300;
+     font-size: 2rem;
+     margin-bottom: 2rem;
+}
+.bg-dark{
+     background: #333;
+     color: white;
+}
 
 /*vp + header--------------------------------------------*/
 .vp-container{
@@ -83,21 +108,24 @@ header ul li a:hover{
 }
 
 .vp{
+     
      display: flex;
      flex: auto;
      flex-direction: column;
      justify-content: center;
      align-items: center;
-     background: url(../images/interprise.jpg) center center/cover; 
+     background: url(../images/frame.jpg) center center/cover;
+     height: 600px
+     
 }
 
 .vp-content{
      max-width: 800px;
      text-align: center;
-     color:rgb(143, 29, 1);
+     color: white;
 }
 .vp-content h1{
-     font-size: 3.2rem;
+     font-size: 3.2em;
      margin-bottom: 2rem;
 
 
@@ -107,4 +135,153 @@ header ul li a:hover{
      font-weight: 300;
      letter-spacing: 1px;
      line-height: 2rem; 
+}
+
+/*offert----------------------------------------------*/
+.offer{
+     padding: 10rem 1rem 10rem 1rem;
+     
+}
+.offer-list{
+     display: flex;
+     flex-flow: row nowrap;
+     justify-content: space-between;
+}
+.offer-elem{
+     border: 1px solid #ddd;
+     background: white;
+     margin: 1rem;
+     flex: 1;
+}
+.offer-elem-img{
+     width: 100%;
+}
+.offer-elem-text{
+     padding: 2rem;
+     text-align: center;
+}
+
+/*offert separator*/
+.offer-separator{
+     margin: 1rem auto;
+     height: 2px;
+     width: 5rem;
+     background: #333;
+}
+
+/*who-----------------------------------------------*/
+.who{
+     display: flex;
+     flex-flow: row nowrap;
+}
+.who-content-img{
+     flex:1;
+}
+.who-content-text{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     flex:1;
+     padding: 4rem;
+}
+.who-content-img img{
+     width: 100%;
+}
+.who-content-text p{
+     margin-bottom: 2rem;
+     line-height: 1.8rem;
+}
+.who-content-text p{
+     font-size: 1.3rem;
+}
+/*testimonials-------------------------------------*/
+.testimonials{
+     padding: 5rem 1rem 5rem 1rem;
+     
+}
+.testimonials-content{
+     display: flex;
+     flex-flow: column nowrap;
+
+}
+.testimonials-elem{
+     display: flex;
+     flex-flow: row nowrap;
+     flex:1;
+     justify-content: space-between;
+     background: white;
+     border-radius: 10px;
+     padding: 2rem;
+     align-items: center;
+     margin-bottom: 1rem;
+}
+.testimonials-text{
+     padding: 0 2rem;
+}
+.testimonials-text p i{
+     margin: 0.6rem;
+     font-size: 1.2rem;
+}
+.testimonials-elem-profil p{
+     font-weight: 700;
+     margin-bottom: 0.5rem;
+}
+.testimonials-elem-profil img{
+     width: 50px;
+     border-radius: 50px;
+     margin-bottom: 0.3rem;
+}
+/*contact----------------------------------------*/
+.contact{
+     padding: 10rem 1rem 10rem 1rem ;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+
+     
+}
+.contact-form{
+          max-width: 600px;     
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+}
+.contact-form input{
+     background: #333;
+     border: 0;
+     border-bottom: 1px solid #555;
+     padding: 1rem;
+     font-size: 1.3rem;
+     color: white;
+     margin-bottom: 1rem;
+    
+}
+.contact-form button{
+     display: block;
+     margin: 3rem auto;
+     padding: 1rem 2rem ;
+     border: 0;
+     border-radius: 30px;
+     background: #FD9330;
+     color: white;
+     font-weight: 700;
+     font-size: 1.3rem;
+     cursor: pointer;
+}
+.contact-form button:hover{
+     background: #bb0000;
+}
+/*footer----------------------------------------*/
+footer{
+     background: #444;
+
+}
+footer p {
+     margin-bottom: 0;
+     padding: 5rem 1rem 5rem 1rem;
+     color: white;
+     text-align: center;
+     font-size: 1.2rem;
+     font-weight: 300;
+     letter-spacing: 0.2rem;
 }
