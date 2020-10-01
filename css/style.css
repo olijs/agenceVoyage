@@ -43,6 +43,7 @@ em{
      display: block;
      max-width: 1200px;
      margin: auto;
+    
 }
 ul{
      list-style: none;
@@ -62,6 +63,7 @@ ul{
      min-height: 100vh;
      display: flex;
      flex-direction: column;
+     
 }
 header{
      padding: 1rem 2rem ;
@@ -127,8 +129,7 @@ header ul li a:hover{
 .vp-content h1{
      font-size: 3.2em;
      margin-bottom: 2rem;
-
-
+     padding: 1rem;
 }
 .vp-content p{
      font-size: 1.8rem;
@@ -140,7 +141,6 @@ header ul li a:hover{
 /*offert----------------------------------------------*/
 .offer{
      padding: 10rem 1rem 10rem 1rem;
-     
 }
 .offer-list{
      display: flex;
@@ -173,9 +173,11 @@ header ul li a:hover{
 .who{
      display: flex;
      flex-flow: row nowrap;
+     min-height: 600px;
 }
 .who-content-img{
      flex:1;
+     background: url(../images/team.jpg) center center/cover;
 }
 .who-content-text{
      display: flex;
@@ -183,9 +185,6 @@ header ul li a:hover{
      justify-content: center;
      flex:1;
      padding: 4rem;
-}
-.who-content-img img{
-     width: 100%;
 }
 .who-content-text p{
      margin-bottom: 2rem;

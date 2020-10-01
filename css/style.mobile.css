@@ -1,0 +1,67 @@
+/*class generique*/
+.title{
+    text-align: center;
+}
+
+/*vp-header----------------------------------------*/
+header{
+    flex-flow: column nowrap;
+
+}
+header ul{
+    flex-flow: column nowrap;
+    text-align: center;
+    
+}
+header ul li{
+    margin-top: 1.5rem;
+    padding: 0.5rem;
+    border-bottom: 1px dotted #ddd;
+}
+.vp-content h1{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.vp-content p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 0rem 0.4rem;
+
+ }
+ /*offer------------------------------------------*/
+ .offer{
+    padding: 5rem 1rem 5rem 1rem;
+    text-align: center;
+}
+.offer-list{
+    flex-direction: column;
+}
+/*who-------------------------------------------*/
+.who{
+    flex-direction: column-reverse;
+}
+.who-content-img{
+    min-height: 300px;
+}
+.who-content-text {
+   padding: 2rem 1rem;
+}
+/*testimonials-----------------------------------*/
+.testimonials-elem{
+  flex-direction: column;
+}
+.testimonials-elem-profil-text{
+    text-align: center;
+}
+.testimonials-elem-profil img{
+    display: block;
+    margin: auto;
+    margin: 2rem auto;
+}
+/*footer-----------------------------------*/
+.contact{
+    padding: 5rem 1rem 5rem 1rem;
+}
+.contact-form button{
+    margin: 3rem auto 0 auto;
+}
